@@ -1,13 +1,17 @@
-package com.binarysearch;
+package BinarySearch;
 
-public class BinarySearch {
+public class Ceiling {
 
     public static void main(String[] args) {
         int[] array = {8, 12, 33, 43, 54, 56};
-        System.out.println(binarySearch(array, 33));
+        System.out.println(ceiling(array, 87));
     }
 
-    static int binarySearch(int[] array, int target) {
+    static int ceiling(int[] array, int target) {
+        if(target > array[array.length]){
+            return -1;
+        }
+
         int start = 0, end = array.length - 1;
 
         while(start <= end){
@@ -22,6 +26,6 @@ public class BinarySearch {
             }
         }
 
-        return -1;
+        return start;
     }
 }

@@ -1,4 +1,4 @@
-package com.binarysearch;
+package BinarySearch;
 
 public class Mountain {
 

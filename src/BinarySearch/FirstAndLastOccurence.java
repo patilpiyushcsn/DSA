@@ -1,4 +1,4 @@
-package com.binarysearch;
+package BinarySearch;
 
 public class FirstAndLastOccurence {
     public static void main(String[] args) {
