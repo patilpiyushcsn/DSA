@@ -25,6 +25,7 @@ public class ContainerWithMostWater {
         return max;
     }
 
+//    Failing for [1, 2, 1]
 //    static int maxArea(int[] height) {
 //        int answer = 0;
 //
@@ -41,11 +42,10 @@ public class ContainerWithMostWater {
 //        int secondMaxIndex = height.length - 1;
 //        int count = 0;
 //        for(int i = height.length - 1; i >= 0; i--){
-//            if(height[i] >= secondMax && (secondMaxIndex - maxIndex) > count){
+//            if(height[i] >= secondMax && Math.abs(secondMaxIndex - maxIndex) > count){
 //                secondMax = height[i];
 //                secondMaxIndex = i;
-//                count = (secondMaxIndex - maxIndex);
-//                System.out.println(count);
+//                count = Math.abs(secondMaxIndex - maxIndex);
 //            }
 //        }
 //
